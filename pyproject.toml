@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "issue-agent-runner"
+version = "0.1.0"
+description = "A minimal, self-hostable reference for turning a tracker ticket into a draft PR with the coding agent of your choice."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "vuihoc-ai", email = "hello@vuihoc.ai" }]
+keywords = ["jira", "github", "coding-agent", "automation", "pull-request"]
+dependencies = [
+    "httpx>=0.27",
+    "pydantic-settings>=2.0",
+]
+
+[project.scripts]
+issue-agent-runner = "issue_agent_runner.cli:main"
+
+[tool.setuptools]
+packages = ["issue_agent_runner"]

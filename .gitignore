@@ -1,0 +1,24 @@
+# Secrets / local config
+.secrets/
+.env
+*.env
+!.env.example
+
+# Internal planning / blog draft — not part of the public tool
+PLAN_*.md
+blog-draft.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Agent run artifacts
+CHANGES_FROM_AGENT.md
+
+# macOS
+.DS_Store
